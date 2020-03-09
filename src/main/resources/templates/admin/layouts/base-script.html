@@ -1,0 +1,20 @@
+
+
+
+<div th:fragment="base_script(scripts)">
+
+    <!-- jQuery -->
+    <script th:src="@{/resources/vendors/jquery/dist/jquery.min.js}"></script>
+
+    <!-- Bootstrap -->
+    <script th:src="@{/resources/vendors/bootstrap/dist/js/bootstrap.min.js}"></script>
+
+    <!-- FastClick -->
+    <script th:src="@{/resources/vendors/fastclick/lib/fastclick.js}"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script th:src="@{/resources/build/js/custom.min.js}"></script>
+
+    <!--/* Per-page placeholder for additional links */-->
+    <th:block th:replace="${scripts}" />
+</div>

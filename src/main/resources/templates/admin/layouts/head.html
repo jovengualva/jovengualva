@@ -1,0 +1,32 @@
+
+<head th:fragment="common_header(title,links)">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title th:replace="${title}">My First Web Spring App</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" th:href="@{/resources/vendors/bootstrap/dist/css/bootstrap.min.css}"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" th:href="@{/resources/vendors/font-awesome/css/font-awesome.min.css}"/>
+
+    <!-- NProgress -->
+    <link rel="stylesheet" th:href="@{/resources/vendors/nprogress/nprogress.css}"/>
+
+    <!-- iCheck -->
+    <link rel="stylesheet" th:href="@{/resources/vendors/iCheck/skins/flat/green.css}"/>
+
+    <!-- Custom Theme Style -->
+    <link rel="stylesheet" th:href="@{/resources/build/css/custom.min.css}"/>
+
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+    <!--/* Per-page placeholder for additional links */-->
+    <th:block th:replace="${links}" />
+</head>
